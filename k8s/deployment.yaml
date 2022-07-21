@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: tiaayou
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: tiaayou
   template:
     metadata:
       labels:
-        app: ray
+        app: tiaayou
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/tiaayou:latest
+        name: tiaayou
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "4b75bb76-f04b-4231-b2de-567282dcd9ff"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vl46se5"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "4b75bb76-f04b-4231-b2de-567282dcd9ff"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vm6hy86"
         - name: Share_Path
           value: "/v2link"
